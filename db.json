@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "role": "admin"
+    }
+  ],
+  "employees": [
+    {
+      "username": "id2",
+      "password": "12345678",
+      "fullName": "id2",
+      "sex": "Nữ",
+      "birthDate": "13/12/2001",
+      "phoneNumber": "0909096565",
+      "address": "Không cần biết",
+      "id": 2
+    },
+    {
+      "username": "id3",
+      "password": "12345678",
+      "fullName": "id3",
+      "sex": "Nam",
+      "birthDate": "10/10/2000",
+      "phoneNumber": "097878757",
+      "address": "Hà Nội",
+      "id": 3
+    },
+    {
+      "username": "hoangthai",
+      "password": "thai1610",
+      "fullName": "Trần Hoàng Thái",
+      "sex": "Nam",
+      "phoneNumber": "0973982126",
+      "birthDate": "16/10/2003",
+      "address": "Hà Nội",
+      "id": 4
+    }
+  ]
+}
