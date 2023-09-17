@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         padding: 15,
         marginVertical: 5,
         alignItems: 'center',
-        borderRadius: 5
+        borderRadius: 10
     },
     text: {
         fontWeight: 'bold',

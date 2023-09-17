@@ -24,12 +24,17 @@ const styles = StyleSheet.create({
         width: '100%',
         borderColor: '#e8e8e8',
         borderWidth: 1,
-        borderRadius: 5,
+        borderRadius: 10,
         paddingHorizontal: 10,
-        marginVertical: 5
+        marginVertical: 5,
+        marginLeft: 10,
+        marginRight: 10
     },
     input: {
         width: '80%',
-        height: 50
+        height: 50,
+        marginLeft: 10,
+        marginRight: 10,
+        
     }
 });

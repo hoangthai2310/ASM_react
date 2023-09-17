@@ -7,7 +7,7 @@ const AdminScreen = () => {
 
   async function getListEmployee() {
     try {
-      const API_URL = 'http://192.168.0.5:3000/employees';
+      const API_URL = 'http://172.20.10.3:3000/employees';
       const response = await fetch(API_URL);
       const data = await response.json();
       setEmployeeList(data);
@@ -20,7 +20,7 @@ const AdminScreen = () => {
   }
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get('http://192.168.0.5:3000/employees');
+      const response = await axios.get('http://172.20.10.3:3000/employees');
       const employeesData = response.data;
       setEmployees(employeesData);
     } catch (error) {

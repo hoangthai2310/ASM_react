@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, Button, Alert } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Button, Alert , Image} from 'react-native';
 import axios from 'axios';
 
 const LoginScreen = ({ navigation }) => {
@@ -8,10 +8,10 @@ const LoginScreen = ({ navigation }) => {
 
   const handleLogin = async () => {
     try {
-      const userResponse = await axios.get('http://192.168.0.5:3000/users');
+      const userResponse = await axios.get('http://172.20.10.3:3000/users');
       const userList = userResponse.data;
 
-      const employeesResponse = await axios.get('http://192.168.0.5:3000/employees');
+      const employeesResponse = await axios.get('http://172.20.10.3:3000/employees');
       const employeesList = employeesResponse.data;
 
       const userFound = userList.find(user => user.username === username && user.password === password);
@@ -40,7 +40,9 @@ const LoginScreen = ({ navigation }) => {
 
   return (
     <View>
-      <Text style={styles.text}>Login Screen</Text>
+      <View style={{ alignItems: 'center'}}>
+                <Image source={require('../assets/img/react-native-logo.png')} style={{width: 250 , height: 250, resizeMode: 'cover',marginTop: 70}} />
+            </View>
       <View style={styles.input}>
         <TextInput
           style={styles.textinput}
